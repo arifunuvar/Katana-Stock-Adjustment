@@ -107,7 +107,7 @@
                         <div class="row">
                             <div class="col-10">
                                 <small>Stock adjustment</small>
-                                <p class="mt-1 fw-bold" id="text42"> deneme</p>
+                                <p class="mt-1 fw-bold" id="text42"> EREN BABA</p>
                             </div>
                             <div class="col-2">
                                 <div class="d-flex align-items-center h-100 justify-content-between">
@@ -124,7 +124,7 @@
                             <div class="col-lg-6">
                                 <label class=" stockinput-f form-label small text-muted">Stock adjustment #</label>
                                 <input type="text" id="stockName"
-                                    class="form-control border-0 shadow-none border-bottom rounded-0 px-0"
+                                    class="form-control border-0 shadow-none border-bottom rounded-0 px-0v input_border1"
                                     placeholder="E.g. SA-1">
                             </div>
 
@@ -144,9 +144,9 @@
                         </div>
 
                         <div class="table-responsive mt-4">
-                            <table class="table table-bordered table-hover">
-                                <thead class="table-light">
-                                    <tr class=" stock-table-f text-muted">
+                            <table class="table table-bordered stockadjustment-table">
+                                <thead>
+                                    <tr class="text-muted">
                                         <th></th>
                                         <th>Item<sup><i class="fa-solid fa-circle-info ms-1"></i></sup></th>
                                         <th>Adjustment +/-<sup><i class="fa-solid fa-circle-info ms-1"></i></sup></th>
@@ -168,7 +168,7 @@
                                     </tr>
                                 </thead>    
                                 <tbody>
-                                    <tr id=" input_outline stockadjustment-table ">
+                                    <tr id="stockadjustment-table">
 
                                         <td width="3%" class="p-0 rounded-0 shadow-none">
                                         </td>
@@ -212,7 +212,11 @@
                         <div class="row">
                             <div class="col-lg-6"></div>
                             <div class="col-lg-6 border-top ">
-                                <span> Total</span>                               
+                                <div class="clearfix">
+                                    <span class="float-start"> Total</span>  
+                                    <span class="text-muted float-end"> 0.00 USD</span>
+                                </div>
+                                                          
                             </div>
                         </div>
                         <div class="row  mt-4">
@@ -242,9 +246,9 @@
         </script>
 
     <script>
-        const stockName = document.getElementById('stockName');
+        var stockName = document.getElementById('stockName');
 
-        const yazdir = function (e) {
+        var yazdir = function (e) {
             text42.innerHTML = e.target.value;
             deleteName.innerHTML = e.target.value;
         }

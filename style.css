@@ -311,3 +311,19 @@ opacity:1.0 ;
   background-color: rgba(0, 0, 0, 0.04);
   border: none;
 }
+
+
+
+#stockadjustment-table:hover input
+{
+background-color: #5E8ED5;
+opacity:1.0 ;
+
+}
+
+#stockadjustment-table input:hover
+{
+background-color: #F2F2F2;
+opacity:1.0 ;
+
+}

@@ -300,3 +300,14 @@ opacity:1.0 ;
 {
   font-size: 13px;
 }
+
+.Addrow
+{
+  color: #3365AF;
+}
+
+.Addrow:hover
+{
+  background-color: rgba(0, 0, 0, 0.04);
+  border: none;
+}

@@ -237,10 +237,8 @@ body {
   }
 /* material card css--------*/
 .form-control {
-
-    border-style: none;
-    border-bottom: 20px;
-    border-color: aqua;
+    border: 5px;
+    border-color: #003E9B;
 }
 
 #cardBody {
@@ -284,4 +282,21 @@ body {
 #infobg
 {
   background-color: #CCD8EB;
+}
+
+#stockadjustment-table:hover
+{
+background-color: #5E8ED5;
+opacity:1.0 ;
+}
+.stock-table-f
+{
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+.stockinput-f
+{
+  font-size: 13px;
 }

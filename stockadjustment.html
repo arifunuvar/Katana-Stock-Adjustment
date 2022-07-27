@@ -122,21 +122,27 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
-                                <abbr style="font-size:14px;" class="mb-0 border-bottom rounded-0 shadow-none mb-2 text-muted"> Stock adjustment# </abbr> 
-                                <input type="text" id="stockName" 
-                                    class="form-control border-0 shadow-none border-bottom rounded-0 px-0v input_border1 topinputstyle"
-                                    placeholder="E.g. SA-1"> <!--id javascript kullanmak için verildi-->
+                                <abbr style="font-size:14px;"
+                                    class="mb-0 border-bottom rounded-0 shadow-none mb-2 text-muted"> Stock adjustment#
+                                </abbr>
+                                <input type="text" id="stockName"
+                                    class="form-control border-0 shadow-none border-bottom rounded-0 px-0"
+                                    placeholder="E.g. SA-1">
+                                <!--id javascript kullanmak için verildi-->
                             </div>
 
                             <div class="col-lg-6">
-                                 <abbr style="font-size:14px;" class="mb-0 border-bottom rounded-0 shadow-none mb-2 text-muted">  Adjustment date </abbr> 
+                                <abbr style="font-size:14px;"
+                                    class="mb-0 border-bottom rounded-0 shadow-none mb-2 text-muted"> Adjustment date
+                                </abbr>
                                 <input type="date"
                                     class="form-control border-0 shadow-none border-bottom rounded-0 px-0">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6 mt-2">
-                                <abbr style="font-size:14px;" class="mb-0 border-bottom rounded-0 shadow-none mb-2 text-muted"> Reason </abbr> 
+                                <abbr style="font-size:14px;"
+                                    class="mb-0 border-bottom rounded-0 shadow-none mb-2 text-muted"> Reason </abbr>
                                 <input type="text"
                                     class="form-control border-0 shadow-none border-bottom rounded-0 px-0"
                                     placeholder="Type reason for adjustment">
@@ -166,7 +172,7 @@
                                         <td></td>
                                     </tr>
 
-                                </thead>    
+                                </thead>
                                 <tbody>
                                     <tr class="stockadjustment-table">
 
@@ -176,7 +182,9 @@
                                             <div class="row">
 
                                                 <div class="col-lg-11">
-                                                  <input class=" form-control rounded-0 shadow-none stockadjustment-table1"  type="text">        
+                                                    <input
+                                                        class=" form-control rounded-0 shadow-none stockadjustment-table1"
+                                                        type="text">
                                                 </div>
 
                                                 <div class="col-lg-1 mt-1">
@@ -187,15 +195,17 @@
                                         </td>
 
                                         <td width="11%" class="p-0">
-                                            <input class="form-control rounded-0 shadow-none stockadjustment-table1" type="text">
+                                            <input class="form-control rounded-0 shadow-none stockadjustment-table1"
+                                               disabled type="text">
                                         </td>
 
                                         <td class="p-0">
-                                            <input class="form-control rounded-0 shadow-none" type="text">   
+                                            <input class="form-control rounded-0 shadow-none" type="text">
                                         </td>
 
                                         <td width="10%" class="p-0">
-                                            <input class="form-control rounded-0 shadow-none stockadjustment-table1" type="text">
+                                            <input class="form-control rounded-0 shadow-none stockadjustment-table1"
+                                                type="text">
                                         </td>
 
                                         <td width="15%" class="p-0">
@@ -203,26 +213,198 @@
                                         </td>
 
                                         <td width="3%" class="p-0">
-                                           <a href="#"><i class="fa-regular fa-trash-can d-flex justify-content-center mt-2"></i> </a> 
+                                            <a href="#"><i
+                                                    class="fa-regular fa-trash-can d-flex justify-content-center mt-2"></i>
+                                            </a>
                                         </td>
 
                                     </tr>
                                 </tbody>
                             </table>
-                        </div> 
-                        <div>
-                            <button type="button" class="btn Addrow d-flex justify-content-start">+ Add new row</button>
                         </div>
-                      
+
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <button type="button" class="btn Addrow">+ Add new row</button>
+                                    </div>
+
+                                    <div class="col-lg-4">
+
+                                        <div>
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn Addrow" data-bs-toggle="modal"
+                                                data-bs-target="#Newmaterial">
+                                                <span>+New material</span>
+                                            </button>
+                                        </div>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="Newmaterial" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered"
+                                            style="min-width: 650px; transform: translate(0px, 0px);">                                                
+                                                <div class="modal-content">
+                                                   <div class="modal-body">
+
+                                                    <div class="row">
+                                                        <div class="col-lg-12 d-flex justify-content-start">
+                                                            <div class="form-check ">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                                                <label class="form-check-label me-4" for="flexRadioDefault1">
+                                                                  New material
+                                                                </label>
+                                                              </div>
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                                  New product
+                                                                </label>
+                                                              </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-12">
+                                                            <label style="font-size:13px;"  class="text-muted">Material Name</label>
+                                                            <input type="text"
+                                                              class="form-control border-0 shadow-none border-bottom rounded-0 px-0"
+                                                              placeholder="Type material name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-12">
+                                                            <label style="font-size:13px;"  class="text-muted">Unit of measure</label>
+                                                            <input type="text"
+                                                              class="form-control border-0 shadow-none border-bottom rounded-0 px-0"
+                                                              placeholder="Select or create unit of measure">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                     <div class="col-lg-12">
+                                                        <abbr style="font-size:13px;"
+                                                        class="mb-0 border-bottom rounded-0 shadow-none mb-2 text-muted">Variant code</abbr>
+                                                    <input type="text"
+                                                        class="form-control border-0 shadow-none border-bottom rounded-0 px-0"
+                                                        placeholder="E.g. P-1, M-1">
+                                                         </div>
+                                                      </div>
+                                                      <div class="row mt-4">
+                                                        <div class="col-lg-12">
+                                                           <abbr style="font-size:13px;"
+                                                           class="mb-0 border-bottom rounded-0 shadow-none mb-2 text-muted">Default purchase price</abbr>
+                                                       <input type="text"
+                                                           class="form-control border-0 shadow-none border-bottom rounded-0 px-0"
+                                                           placeholder="Type purchase price">
+                                                            </div>
+                                                         </div>
+                                                         <p class="mt-1">More parameters available on full material card</p>
+                                                         <div class="d-flex justify-content-end">
+                                                            <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Done</button>
+                                                          </div>
+                                                   </div>                                             
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-4">
+                                        <div>
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn Addrow" data-bs-toggle="modal"
+                                                data-bs-target="#Newmaterial">
+                                                <span>+New Product</span>
+                                            </button>
+                                        </div>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="Newmaterial" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered"
+                                            style="min-width: 650px; transform: translate(0px, 0px);">                                                
+                                                <div class="modal-content">
+                                                   <div class="modal-body">
+
+                                                    <div class="row">
+                                                        <div class="col-lg-12 d-flex justify-content-start">
+                                                            <div class="form-check ">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" >
+                                                                <label class="form-check-label me-4" for="flexRadioDefault1"checked>
+                                                                  New material
+                                                                </label>
+                                                              </div>
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                                  New product
+                                                                </label>
+                                                              </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-12">
+                                                            <label style="font-size:13px;"  class="text-muted">Material Name</label>
+                                                            <input type="text"
+                                                              class="form-control border-0 shadow-none border-bottom rounded-0 px-0"
+                                                              placeholder="Type material name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-12">
+                                                            <label style="font-size:13px;"  class="text-muted">Unit of measure</label>
+                                                            <input type="text"
+                                                              class="form-control border-0 shadow-none border-bottom rounded-0 px-0"
+                                                              placeholder="Select or create unit of measure">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                     <div class="col-lg-12">
+                                                        <abbr style="font-size:13px;"
+                                                        class="mb-0 border-bottom rounded-0 shadow-none mb-2 text-muted">Variant code</abbr>
+                                                    <input type="text"
+                                                        class="form-control border-0 shadow-none border-bottom rounded-0 px-0"
+                                                        placeholder="E.g. P-1, M-1">
+                                                         </div>
+                                                      </div>
+                                                      <div class="row mt-4">
+                                                        <div class="col-lg-12">
+                                                           <abbr style="font-size:13px;"
+                                                           class="mb-0 border-bottom rounded-0 shadow-none mb-2 text-muted">Default purchase price</abbr>
+                                                       <input type="text"
+                                                           class="form-control border-0 shadow-none border-bottom rounded-0 px-0"
+                                                           placeholder="Type purchase price">
+                                                            </div>
+                                                         </div>
+                                                         <p class="mt-1">More parameters available on full material card</p>
+                                                         <div class="d-flex justify-content-end">
+                                                            <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Done</button>
+                                                          </div>
+                                                   </div>                                             
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6"></div>
+
+                        </div>
 
                         <div class="row">
                             <div class="col-lg-6"></div>
                             <div class="col-lg-6 border-top ">
                                 <div class="clearfix">
-                                    <span class="float-start"> Total</span>  
+                                    <span class="float-start"> Total</span>
                                     <span class="text-muted float-end"> 0.00 USD</span>
                                 </div>
-                                                          
+
                             </div>
                         </div>
                         <div class="row  mt-4">
@@ -235,21 +417,21 @@
                                 </textarea>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
 
-        <script src="//cdn.ckeditor.com/4.19.1/basic/ckeditor.js"></script>
+    <script src="//cdn.ckeditor.com/4.19.1/basic/ckeditor.js"></script>
 
-        <script>
-            CKEDITOR.replace('editor1')
-        </script>
+    <script>
+        CKEDITOR.replace('editor1')
+    </script>
 
     <script>
         var stockName = document.getElementById('stockName');

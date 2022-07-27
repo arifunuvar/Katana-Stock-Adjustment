@@ -293,6 +293,7 @@ body {
 .Addrow
 {
   color: #3365AF;
+  border: none;
 }
 
 .Addrow:hover

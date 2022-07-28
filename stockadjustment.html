@@ -196,20 +196,21 @@
 
                                         <td width="11%" class="p-0">
                                             <input class="form-control rounded-0 shadow-none stockadjustment-table1"
-                                               disabled type="text">
+                                               type="text">
                                         </td>
 
-                                        <td class="p-0">
-                                            <input class="form-control rounded-0 shadow-none" type="text">
+                                        <td class="p-0 d-flex justify-content-center">
+                                            <input class="form-control rounded-0 shadow-none" disabled  type="text">
+                                            <i class="fa-solid fa-circle-info mt-2 me-1"></i>
                                         </td>
 
                                         <td width="10%" class="p-0">
                                             <input class="form-control rounded-0 shadow-none stockadjustment-table1"
-                                                type="text">
+                                                style="text-align: right;" type="text" placeholder="0 USD">
                                         </td>
 
                                         <td width="15%" class="p-0">
-                                            <input class="form-control rounded-0 shadow-none" type="text">
+                                            <input class="form-control rounded-0 shadow-none" disabled type="text">
                                         </td>
 
                                         <td width="3%" class="p-0">
@@ -333,14 +334,14 @@
                                                         <div class="col-lg-12 d-flex justify-content-start">
                                                             <div class="form-check ">
                                                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" >
-                                                                <label class="form-check-label me-4" for="flexRadioDefault1"checked>
+                                                                <label class="form-check-label me-4" for="flexRadioDefault1">
                                                                   New material
                                                                 </label>
                                                               </div>
                                                               <div class="form-check">
-                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                                                                 <label class="form-check-label" for="flexRadioDefault2">
-                                                                  New product
+                                                                New product
                                                                 </label>
                                                               </div>
                                                         </div>
@@ -374,10 +375,10 @@
                                                       <div class="row mt-4">
                                                         <div class="col-lg-12">
                                                            <abbr style="font-size:13px;"
-                                                           class="mb-0 border-bottom rounded-0 shadow-none mb-2 text-muted">Default purchase price</abbr>
+                                                           class="mb-0 border-bottom rounded-0 shadow-none mb-2 text-muted">Default sales price</abbr>
                                                        <input type="text"
                                                            class="form-control border-0 shadow-none border-bottom rounded-0 px-0"
-                                                           placeholder="Type purchase price">
+                                                           placeholder="Type sales price">
                                                             </div>
                                                          </div>
                                                          <p class="mt-1">More parameters available on full material card</p>
@@ -401,8 +402,9 @@
                             <div class="col-lg-6"></div>
                             <div class="col-lg-6 border-top ">
                                 <div class="clearfix">
-                                    <span class="float-start"> Total</span>
-                                    <span class="text-muted float-end"> 0.00 USD</span>
+                                    <h5 class="float-start mt-2"> Total</h5>
+                                    <input class="form-control border-0 shadow-none p-0 mt-0" style="text-align: end;" type="text" placeholder="0,00 USD" disabled>
+                                    <!-- <span class="text-muted float-end"> 0.00 USD</span> -->
                                 </div>
 
                             </div>

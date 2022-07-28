@@ -310,13 +310,18 @@ background-color: #e2edff;
 opacity:1.0 ;
 
 }
+.stockadjustment-table td:hover
+{
+background-color: #e2edff;
+opacity:1.0 ;
+
+}
 
 .stockadjustment-table input:hover
 {
 background-color:#fff ;
 opacity:1.0 ;
 }
-
 
 input[type=text]:focus
 {
@@ -329,6 +334,11 @@ input[type=text]:focus
   border: 1px solid rgb(9, 51, 203) ;
 }
 
+.form-control:disabled, .form-control[readonly]
+{
+  background-color: #fff;
+  opacity: 1;
+}
 
 
 
